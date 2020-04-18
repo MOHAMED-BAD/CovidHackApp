@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "449491664918",
+    "firebase_url": "https://covidhackapp-2a6aa.firebaseio.com",
+    "project_id": "covidhackapp-2a6aa",
+    "storage_bucket": "covidhackapp-2a6aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449491664918:android:6a65387e51e5b50ff53537",
+        "android_client_info": {
+          "package_name": "com.example.covidhackapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "449491664918-3sssb9r355hjnamf6i9ir9enoim8r67h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiWj3ccrSuU8QyaRwOZ51t7d0p-4ABPTs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "449491664918-3sssb9r355hjnamf6i9ir9enoim8r67h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
