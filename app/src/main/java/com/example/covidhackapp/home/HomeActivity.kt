@@ -8,6 +8,7 @@ import com.example.covidhackapp.chat.ChatActivity
 import com.example.covidhackapp.counter.CounterActivity
 import com.example.covidhackapp.instructions.InstructionsActivity
 import com.example.covidhackapp.map.MapActivity
+import com.example.covidhackapp.map.MapsRegistrationActivity
 import com.example.covidhackapp.report.ReportActivity
 import com.example.covidhackapp.states.StatesActivity
 import kotlinx.android.synthetic.main.activity_home.*
@@ -27,7 +28,7 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
         btnMap.setOnClickListener {
-            val intent = Intent(this, MapActivity::class.java)
+            val intent = Intent(this, MapsRegistrationActivity::class.java)
             startActivity(intent)
         }
         btnChat.setOnClickListener {
