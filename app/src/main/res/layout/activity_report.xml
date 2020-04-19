@@ -180,10 +180,10 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/btnSendReport"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/radioTemp"
-            app:layout_constraintBottom_toTopOf="@id/btnSendReport">
+            app:layout_constraintTop_toBottomOf="@id/radioTemp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etTemp"
@@ -210,10 +210,10 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/btnSendReport"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvTempRange"
-            app:layout_constraintBottom_toTopOf="@id/btnSendReport">
+            app:layout_constraintTop_toBottomOf="@id/tvTempRange">
 
             <RadioButton
                 android:id="@+id/radioLow"
@@ -240,7 +240,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
+            android:background="@drawable/btn_background"
+            android:clickable="true"
+            android:focusable="true"
             android:text="@string/send_report"
+            android:textColor="#ffffff"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1"

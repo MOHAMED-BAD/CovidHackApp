@@ -21,7 +21,6 @@
         <activity android:name=".chat.ChatActivity"></activity>
         <activity android:name=".counter.CounterActivity" />
         <activity android:name=".instructions.InstructionsActivity" />
-        <activity android:name=".map.MapActivity" />
         <activity android:name=".states.StatesActivity" />
         <activity android:name=".report.ReportActivity" />
         <activity android:name=".home.HomeActivity" />

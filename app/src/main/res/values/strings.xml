@@ -33,8 +33,10 @@
     <string name="runny_nose">Runny nose</string>
     <string name="add_extra_symptoms">Add extra symptoms</string>
     <string name="send_report">Send report</string>
-    <string name="starting_day">Started self-isolation on:</string>
+    <string name="starting_day">If you started self-isolation on:</string>
     <string name="stop">Stop</string>
     <string name="start">Start</string>
     <string name="end_day">It will end on</string>
+    <string name="confirm">Confirm</string>
+    <string name="write_your_message">Write your message</string>
 </resources>

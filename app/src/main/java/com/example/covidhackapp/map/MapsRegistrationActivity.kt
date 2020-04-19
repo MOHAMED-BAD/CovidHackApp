@@ -57,37 +57,38 @@ class MapsRegistrationActivity : AppCompatActivity(), OnMapReadyCallback {
             ) == PackageManager.PERMISSION_GRANTED
         ) {
             mMap.isMyLocationEnabled = true
-        } else {
-            // Show rationale and request permission.
         }
 
-        airLocation = AirLocation(this, true, true, object : AirLocation.Callbacks {
-            override fun onSuccess(location: Location) {
-                // location fetched successfully, proceed with it
-                val latLng = LatLng(
-                    location.latitude,
-                    location.longitude
-                )
-                if (currentLocation == null)
-                    currentLocation = latLng
-
-                mMap.animateCamera(
-                    CameraUpdateFactory.newLatLngZoom(
-                        latLng,15f
+        airLocation = AirLocation(this,
+            shouldWeRequestPermissions = true,
+            shouldWeRequestOptimization = true,
+            callbacks = object : AirLocation.Callbacks {
+                override fun onSuccess(location: Location) {
+                    // location fetched successfully, proceed with it
+                    val latLng = LatLng(
+                        location.latitude,
+                        location.longitude
                     )
-                )
+                    if (currentLocation == null)
+                        currentLocation = latLng
+
+                    mMap.animateCamera(
+                        CameraUpdateFactory.newLatLngZoom(
+                            latLng,15f
+                        )
+                    )
 
 
-                confirm_button.isEnabled = true
-            }
+                    confirm_button.isEnabled = true
+                }
 
-            override fun onFailed(locationFailedEnum: AirLocation.LocationFailedEnum) {
-                // couldn't fetch location due to reason available in locationFailedEnum
-                // you may optionally do something to inform the user, even though the reason may be obvious
-//                toast(locationFailedEnum.name)
-            }
+                override fun onFailed(locationFailedEnum: AirLocation.LocationFailedEnum) {
+                    // couldn't fetch location due to reason available in locationFailedEnum
+                    // you may optionally do something to inform the user, even though the reason may be obvious
+            //                toast(locationFailedEnum.name)
+                }
 
-        })
+            })
         // Add a marker in Sydney and move the camera
         mMap.setOnCameraIdleListener {
             confirm_button.isEnabled = true

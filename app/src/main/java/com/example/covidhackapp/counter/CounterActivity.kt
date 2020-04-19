@@ -33,16 +33,7 @@ class CounterActivity : AppCompatActivity() {
             val formattedEndDate = dateFormat.format(endDate)
             tvDayOfEndDate.text = formattedEndDate
 
-            btnStart.visibility = View.GONE
-            btnStop.visibility = View.VISIBLE
         }
-
-        btnStop.setOnClickListener {
-            tvDayOfStartDate.text = ""
-            tvDayOfEndDate.text = ""
-
-            btnStart.visibility = View.VISIBLE
-            btnStop.visibility = View.GONE
-        }
+        
     }
 }
